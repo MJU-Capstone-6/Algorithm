@@ -32,4 +32,20 @@ c++ 이랑 c#에서 엄청 낮은 정확도로 인해 전체 정확도가 많이
 ![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/543795f1-e08b-439e-b6de-86eaffaac83c)  
 대부분의 데이터가 우리가 원하는 코드와 관련없는 것으로 판단
 
-애초에 크롤링 할때 c언어로 크롤링을 해야된다고 판단
+애초에 크롤링 할때 c언어로 크롤링을 해야된다고 판단되어 다시 크롤링(아래의 사진은 크롤링해서 만든 dataframe이다)  
+
+![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/9b3aabf2-2f13-4e53-93d8-0cc6d8849b58)  
+![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/3ae71000-f916-4674-8a7b-3a2e2e6aba7b)  
+전체 갯수는 줄어들었지만 그래도 충분한 양이라 판단되어 진행  
+
+
+
+결과는 아래와 같이 나왔다.   
+
+![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/67012c45-e6f9-40ea-9d0d-69b7b36e6f4e)  
+
+전체 평균이 약 0.77로 나왔다.   
+성능을 끌어 올려서 목표치는 0.9가 아닌 0.85로 수치 재조정
+
+
+
