@@ -49,3 +49,9 @@ c++ 이랑 c#에서 엄청 낮은 정확도로 인해 전체 정확도가 많이
 
 
 
+# 4/24
+
+알고리즘 성능 개선 
+konlpy에 있는 kkma를 통해 문장에서 명사, 외국어 명사를 추출 & 토큰화 시켜 성능을 끌어올림.   
+
+![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/07377cc3-ab4c-4b92-a1fb-6df5502c985d)
