@@ -13,9 +13,14 @@
 기존에 있던 카테고리말고도 추가 카테고리를 넣어서 데이터의 양을 늘렸다.     
 
 ![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/5ce40680-9f8b-4881-b68e-9c691cb71667)  
-마찬가지로 같은 코드로 돌렸더니 아래와 같은 정확도가 나왔음 
+마찬가지로 같은 코드로 돌렸더니 아래와 같은 정확도가 나왔음   
+Counter vectorizer사용  
+![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/5a7a8b6a-aeef-442e-84a3-fe6fe19bb1e4)  
 
-![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/5a7a8b6a-aeef-442e-84a3-fe6fe19bb1e4)
+Tfidf 의 방식을 적용해보았더니 아래와 같은 정확도로 나왔다.   
+![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/06f9501e-3d41-4e87-98f8-2269dbb3fc22)   
+Tfidf를 본 결과 아예 구분을 못하는 경우(ruby)도 존재하여 일단은 CountVectorize 를 사용하기로 했다
+
 
 
 c++ 이랑 c#에서 엄청 낮은 정확도로 인해 전체 정확도가 많이 떨어져있는데(c# 0.07, c++ 0.14) 아마도 csv를 불러올때 특수문자를 빼서 #, ++ 같은 기호가 사라진걸로 추측되어 특수문자 + 숫자를 빼서 그런걸로 보임
