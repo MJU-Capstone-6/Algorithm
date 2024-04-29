@@ -59,4 +59,22 @@ c++ 이랑 c#에서 엄청 낮은 정확도로 인해 전체 정확도가 많이
 알고리즘 성능 개선 
 konlpy에 있는 kkma를 통해 문장에서 명사, 외국어 명사를 추출 & 토큰화 시켜 성능을 끌어올림.   
 
-![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/07377cc3-ab4c-4b92-a1fb-6df5502c985d)
+![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/07377cc3-ab4c-4b92-a1fb-6df5502c985d)    
+
+# 4/29 
+
+기존에 쓰던 MultinomialNB 대신에 ComplementNB를 사용해보았다   
+https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.ComplementNB.html#sklearn.naive_bayes.ComplementNB  
+
+Rennie, J. D., Shih, L., Teevan, J., & Karger, D. R. (2003). Tackling the poor assumptions of naive bayes text classifiers. In ICML (Vol. 3, pp. 616-623). https://people.csail.mit.edu/jrennie/papers/icml03-nb.pdf  
+기존의 나이브 베이즈 경우에는 feature들이 독립적이여서 다른 분류 결과에 영향을 미치지 않는다는 상당한 나이브한 조약이 걸려있다. 
+위 논문에서는 주어진 클래스를 제외한 나머지 클래스에서 tfidf를 통해 가중치를 만들어 확률을 보정하는 방식을 추가  
+
+
+결과는 아래와 같이 나왔다. 84.6%  
+
+![image](https://github.com/MJU-Capstone-6/Algorithm/assets/54893409/ebe1324d-5a98-4714-a4be-7dd07a889edd)  
+
+
+
+
